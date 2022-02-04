@@ -4,7 +4,7 @@ import sys
 for line in sys.stdin:
   datalist = line.strip().split(",")
   if (len(datalist) ==2) : 
-    title,user rating score = datalist
+    title,userscore = datalist
 
     # print intermediate key-value pairs to standard output
-    print(user rating score,"\t",1)
+    print(userscore,"\t",1)

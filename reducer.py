@@ -6,15 +6,15 @@ thisValue = 0.0
 for line in sys.stdin:
   datalist = line.strip().split('\t')
   if (len(datalist) == 2) : 
-    user rating score, count = datalist
+    userscore, count = datalist
 
-    if user rating score != thisKey:   # we've moved to another key
+    if userscore != thisKey:   # we've moved to another key
       if thisKey:
         # output the previous key-summaryvalue result
         print(thisKey,'\t',thisValue)
 
       # start over for each new key
-      thisKey = user rating score 
+      thisKey = userscore 
       thisValue = 0.0
   
     # apply the aggregation function
